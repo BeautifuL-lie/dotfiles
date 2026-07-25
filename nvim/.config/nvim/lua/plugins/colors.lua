@@ -5,18 +5,14 @@
 return {
     {
 	"rebelot/kanagawa.nvim",
-	-- priority = 1000,
+	priority = 1000,
 	config = function ()
-	    -- vim.cmd.colorscheme "kanagawa-dragon"
+	    vim.cmd.colorscheme "kanagawa-dragon"
 	    -- enable_transparency()
 	end
     },
     {
 	"ellisonleao/gruvbox.nvim",
-	priority = 1000,
-	config = function ()
-	    vim.cmd.colorscheme "gruvbox"
-	end
     },
     {
 	"nvim-lualine/lualine.nvim",
