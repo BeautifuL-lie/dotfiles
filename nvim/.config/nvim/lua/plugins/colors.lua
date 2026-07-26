@@ -20,7 +20,7 @@ return {
 	    "nvim-tree/nvim-web-devicons",
 	},
 	opts = {
-	    theme = 'auto',
+	    theme = "auto",
 	}
     },
 }

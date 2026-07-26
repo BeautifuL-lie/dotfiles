@@ -2,7 +2,7 @@ return {
      {
 	"nvim-treesitter/nvim-treesitter",
 	lazy = false,
-	build = ':TSUpdate'
+	build = ":TSUpdate"
     },
     {
 	"lukas-reineke/indent-blankline.nvim",
@@ -20,14 +20,14 @@ return {
 	"lewis6991/gitsigns.nvim"
     },
     {
-	'nvim-telescope/telescope.nvim', version = '*',
+	"nvim-telescope/telescope.nvim", version = "*",
 	dependencies = {
-	    'nvim-lua/plenary.nvim',
-	    { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+	    "nvim-lua/plenary.nvim",
+	    { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	}
     },
     {
-	'windwp/nvim-autopairs',
+	"windwp/nvim-autopairs",
 	event = "InsertEnter",
 	config = true
 	-- use opts = {} for passing setup options
