@@ -4,23 +4,23 @@
 
 return {
     {
-	"rebelot/kanagawa.nvim",
-	priority = 1000,
-	config = function ()
-	    vim.cmd.colorscheme "kanagawa-dragon"
-	    -- enable_transparency()
-	end
+	    "rebelot/kanagawa.nvim",
+	    priority = 1000,
+	    config = function ()
+	        vim.cmd.colorscheme "kanagawa-dragon"
+	        -- enable_transparency()
+	    end
     },
     {
-	"ellisonleao/gruvbox.nvim",
+	    "ellisonleao/gruvbox.nvim",
     },
     {
-	"nvim-lualine/lualine.nvim",
-	dependencies = {
-	    "nvim-tree/nvim-web-devicons",
-	},
-	opts = {
-	    theme = "auto",
-	}
+	    "nvim-lualine/lualine.nvim",
+	    dependencies = {
+	        "nvim-tree/nvim-web-devicons",
+	    },
+	    opts = {
+	        theme = "auto",
+	    }
     },
 }
