@@ -8,3 +8,10 @@ vim.api.nvim_create_autocmd("FileType", {
 	vim.treesitter.start()
     end,
 })
+
+vim.diagnostic.config({
+  virtual_text = true, 
+  signs = false,        
+  underline = true,    
+  update_in_insert = false, 
+})
