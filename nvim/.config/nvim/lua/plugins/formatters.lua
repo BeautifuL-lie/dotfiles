@@ -1,0 +1,20 @@
+return {
+	"stevearc/conform.nvim",
+	event = { "BufReadPre", "BufNewFile" },
+	config = function()
+		local conform = require("conform")
+
+		conform.setup({
+			formatters_by_ft = {
+				javascript = { "prettierd" },
+				lua = { "stylua" },
+				c = { "clang-format" },
+			},
+			format_on_save = {
+				lsp_fallback = false,
+				async = false,
+				timeout_ms = 500,
+			},
+		})
+	end,
+}
