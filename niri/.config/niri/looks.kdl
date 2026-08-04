@@ -1,0 +1,81 @@
+cursor {
+    xcursor-theme "Bibata-Modern-Classic"
+    xcursor-size 18
+}
+
+layout {
+    gaps 5
+    background-color "transparent"
+    center-focused-column "never"
+    preset-column-widths {
+        proportion 0.5
+        proportion 0.66667
+    }
+
+    default-column-width { proportion 0.5; }
+    focus-ring {
+        off
+    }
+
+    border {
+        on
+        width 3 
+    }
+
+    shadow {
+        on
+        draw-behind-window true
+        softness 30
+        spread 5
+        offset x=0 y=5
+        color "#0007"
+    }
+
+    struts {
+        left 0
+        right 0
+        top 0
+        bottom 0
+    }
+
+    tab-indicator {
+        place-within-column
+        gaps-between-tabs 10
+        length total-proportion=0.45
+    }
+}
+
+hotkey-overlay {
+     skip-at-startup
+}
+
+prefer-no-csd
+
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+animations {
+    // Uncomment to turn off all animations.
+    // off
+
+    // Slow down all animations by this factor. Values below 1 speed them up instead.
+    // slowdown 3.0
+}
+
+gestures {
+    hot-corners {
+	off
+    }
+}
+
+overview {
+    workspace-shadow {
+	off
+    }
+}
+
+blur {
+    passes 3
+    offset 3
+    noise 0.02
+    saturation 1.5
+}

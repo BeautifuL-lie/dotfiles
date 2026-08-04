@@ -1,0 +1,74 @@
+window-rule {
+    geometry-corner-radius 8
+    clip-to-geometry true
+}
+
+window-rule {
+    match app-id="^vesktop$"
+    match app-id="^com.github.th_ch.youtube_music$"
+    match app-id=r#"firefox$"#
+    match app-id="dev.noctalia.Noctalia"
+    match app-id="^com.github.th-ch.youtube-music$"
+    open-maximized true
+}
+
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+    open-focused false
+    default-floating-position x=32 y=32 relative-to="bottom-right"
+    default-column-width { proportion 0.3; }
+    default-window-height { proportion 0.3; }
+}
+
+/-window-rule {
+    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
+    match app-id=r#"^org\.gnome\.World\.Secrets$"#
+    block-out-from "screen-capture"
+}
+
+window-rule {
+    match title="Choose Directory"
+    match title="All Files"
+    open-floating true
+    default-floating-position x=0 y=120 relative-to="top"
+    default-window-height { proportion 0.5; }
+    default-column-width { proportion 0.4; }
+}
+
+layer-rule {
+    match namespace="^noctalia-wallpaper*"
+    match namespace="^mpvpaper$"
+    place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="^rofi$"
+
+    shadow {
+        on
+    }
+
+    geometry-corner-radius 10
+}
+
+window-rule {
+  background-effect {
+    blur true
+    xray false
+  }
+}
+
+layer-rule {
+  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
+  background-effect {
+    xray false
+    // blur false
+  }
+}
+
+
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
+}
