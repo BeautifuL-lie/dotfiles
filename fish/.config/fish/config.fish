@@ -10,3 +10,4 @@ zoxide init fish | source
 
 fish_add_path /home/BeautifuL_lie/.bin
 fish_add_path /home/BeautifuL_lie/.config/composer/vendor/bin
+fish_add_path /usr/local/cross/bin
