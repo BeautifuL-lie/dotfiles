@@ -4,7 +4,7 @@ cursor {
 }
 
 layout {
-    gaps 5
+    gaps 3.5
     background-color "transparent"
     center-focused-column "never"
     preset-column-widths {
@@ -19,7 +19,7 @@ layout {
 
     border {
         on
-        width 3 
+        width 2.5 
     }
 
     shadow {
